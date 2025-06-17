@@ -1,0 +1,25 @@
+#=====================
+# OS and File System
+#=====================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+#=====================
+# Editor Settings
+#=====================
+.vscode/
+*.code-workspace
+
+#=====================
+# System/Backup/Temp Files
+#=====================
+*.log
+*.tmp
+*.bak
+*~
+
+#=====================
+# Environment Secrets
+#=====================
+.env
