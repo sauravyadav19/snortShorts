@@ -16,6 +16,8 @@ body{
 }
 #cardContainer{
     border:solid green 5px;
+    background-color: white;
+    border-radius: 20px;
     box-sizing: border-box;
     height: 60%;
     width: 60%;
