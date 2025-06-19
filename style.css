@@ -1,4 +1,31 @@
 body{
     margin:0px;
+   
 }
-
+#mainContainer{
+    border: solid red 10px;
+    height: 100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    box-sizing:border-box;
+}
+#cardContainer{
+    border:solid green 5px;
+    box-sizing: border-box;
+    height: 60%;
+    width: 60%;
+    display:flex;
+    flex-direction: column;
+}
+#jokeContainer{
+    border: solid blue 5px;
+    box-sizing: border-box;
+    flex:0.8;
+}
+#buttonContainer{
+    border: solid black 3px;
+    box-sizing: border-box;
+    flex:0.2;
+}
