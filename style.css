@@ -33,4 +33,22 @@ body{
     border: solid black 3px;
     box-sizing: border-box;
     flex:0.2;
+    display:flex;
+    justify-content: space-between;
+}
+#shareButton{
+    margin:10px 30px;
+    border: solid 3px red;
+    height: 50px;
+    width: 90px;
+    box-sizing: border-box;
+    border-radius:5px;
+}
+#newJokeButton{
+    margin:10px 30px;
+    height: 50px;
+    width: 90px;
+    box-sizing: border-box;
+    border: solid 3px purple;
+    border-radius: 5px;
 }
