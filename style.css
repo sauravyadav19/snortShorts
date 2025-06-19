@@ -4,6 +4,9 @@ body{
 }
 #mainContainer{
     border: solid red 10px;
+    background-image: url("./assets/background.png");
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     width:100vw;
     display:flex;
