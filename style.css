@@ -14,7 +14,6 @@ body{
     box-sizing:border-box;
 }
 #cardContainer{
-    border:solid green 5px;
     background-color: white;
     border-radius: 20px;
     box-sizing: border-box;
@@ -24,7 +23,6 @@ body{
     flex-direction: column;
 }
 #jokeContainer{
-    border: solid blue 5px;
     box-sizing: border-box;
     flex:0.8;
     display:flex;
@@ -35,7 +33,6 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 1.2em;
-    border: solid orangered 3px;
     flex:0.5;
     margin:10px 20px;
     padding:20px;
@@ -58,7 +55,6 @@ body{
     justify-content: center;
 }
 #buttonContainer{
-    border: solid black 3px;
     box-sizing: border-box;
     flex:0.2;
     display:flex;
@@ -66,7 +62,6 @@ body{
 }
 #shareButton{
     margin:10px 30px;
-    border: solid 3px red;
     height: 50px;
     width: 90px;
     box-sizing: border-box;
@@ -77,6 +72,5 @@ body{
     height: 50px;
     width: 90px;
     box-sizing: border-box;
-    border: solid 3px purple;
     border-radius: 5px;
 }
