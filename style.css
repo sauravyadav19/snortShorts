@@ -35,11 +35,20 @@ body{
     border: solid orangered 3px;
     flex:0.5;
     margin:10px 20px;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 #jokeDelivery{
+    box-sizing: border-box;
     border: solid olive 3px;
     flex:0.5;
     margin:10px 20px;
+    padding:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 #buttonContainer{
     border: solid black 3px;
