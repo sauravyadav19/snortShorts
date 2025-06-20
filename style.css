@@ -2,6 +2,9 @@ body{
     margin:0px;
    
 }
+html{
+    font-size:16px;
+}
 #mainContainer{
     background-image: url("./assets/background.png");
     background-size: cover;
@@ -32,7 +35,7 @@ body{
     font-family: "Cedarville Cursive", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 1.5rem;
     flex:0.5;
     margin:10px 20px;
     padding:20px;
@@ -44,7 +47,7 @@ body{
     font-family: "Cedarville Cursive", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 1.5rem;
     box-sizing: border-box;
     border: solid olive 3px;
     border-radius: 10px;
