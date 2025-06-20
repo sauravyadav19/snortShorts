@@ -33,14 +33,18 @@ function fetchJoke(url){
 
 async function main(){
     const {setup, delivery} = await fetchJoke(url);
-    console.log(setup);
-    console.log(delivery);
+    return {setup, delivery};
+    
 }
-main();
+
 
 
 
 const jokeSetup = document.querySelector("#jokeSetup");
 const jokeDelivery = document.querySelector("#jokeDelivery");
 
-document.querySelector("#newJokeButton").addEventListener('click',()=>{})
+document.querySelector("#newJokeButton").addEventListener('click',async ()=>{
+    const joke = await main()
+    jokeSetup.textContent = joke.setup;
+    jokeDelivery.textContent = joke.delivery;
+})
