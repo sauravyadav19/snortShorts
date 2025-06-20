@@ -3,7 +3,7 @@ let url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=racist,sexist&type=two
 
 //This function fetches a two part joke using v2.jokeapi.dev api
 function fetchJoke(url){
-    fetch(url)
+    return fetch(url)
     .then(responsePromise=>{
         //respnonsePromise is result of the network request that we make was successfull
         // but it still does not contain the body (joke) as we are looking for rather we have
@@ -17,12 +17,23 @@ function fetchJoke(url){
         //resolve returing the value {responsePromise.json() is async procees that why we are chaining it with .then again}
         const setup = parsedBody.setup;
         const delivery = parsedBody.delivery;
-        console.log(setup,delivery);
-    })
+        return {setup,delivery};
+    }) 
     .catch((error)=>{
-        console.log(error);
+        return {setup: '', delivery:''};
 
     })
 }
 
-fetchJoke(url);
+
+// after some node version greater than 14, we are not allowed to make the top Level function 
+// a async function so to get away with it we have a created a function main and then we have called
+// it inside the top level function; we could have name it anything but main here sounded  a little
+// more coherent
+
+async function main(){
+    const {setup, delivery} = await fetchJoke(url);
+    console.log(setup);
+    console.log(delivery);
+}
+main();
