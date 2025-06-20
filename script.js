@@ -37,3 +37,10 @@ async function main(){
     console.log(delivery);
 }
 main();
+
+
+
+const jokeSetup = document.querySelector("#jokeSetup");
+const jokeDelivery = document.querySelector("#jokeDelivery");
+
+document.querySelector("#newJokeButton").addEventListener('click',()=>{})
