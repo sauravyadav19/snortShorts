@@ -31,11 +31,11 @@ function fetchJoke(url){
 // it inside the top level function; we could have name it anything but main here sounded  a little
 // more coherent
 
-async function main(){
-    const {setup, delivery} = await fetchJoke(url);
-    return {setup, delivery};
+// async function main(){
+//     const {setup, delivery} = await fetchJoke(url);
+//     return {setup, delivery};
     
-}
+// }
 
 
 
@@ -44,7 +44,7 @@ const jokeSetup = document.querySelector("#jokeSetup");
 const jokeDelivery = document.querySelector("#jokeDelivery");
 
 document.querySelector("#newJokeButton").addEventListener('click',async ()=>{
-    const joke = await main()
+    const joke = await fetchJoke(url);
     jokeSetup.textContent = joke.setup;
     jokeDelivery.textContent = joke.delivery;
 })
