@@ -6,7 +6,7 @@ html{
     font-size:16px;
 }
 #mainContainer{
-    background-image: url("./assets/background.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/background.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -17,13 +17,14 @@ html{
     box-sizing:border-box;
 }
 #cardContainer{
-    background-color: white;
+    background-color: azure;
     border-radius: 20px;
     box-sizing: border-box;
     height: 60%;
     width: 60%;
     display:flex;
     flex-direction: column;
+    border: dotted 2px grey;
 }
 #jokeContainer{
     box-sizing: border-box;
@@ -45,11 +46,11 @@ html{
 }
 #jokeDelivery{
     font-family: "Cedarville Cursive", cursive;
-    font-weight: 400;
+    background-color: azure;
     font-style: normal;
     font-size: 1.5rem;
     box-sizing: border-box;
-    border: solid olive 3px;
+    border: dotted olive 2px;
     border-radius: 10px;
     flex:0.5;
     margin:10px 20px;
@@ -70,6 +71,10 @@ html{
     width: 90px;
     box-sizing: border-box;
     border-radius:5px;
+    background-color: #00274C;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 }
 #newJokeButton{
     margin:10px 30px;
@@ -77,4 +82,8 @@ html{
     width: 90px;
     box-sizing: border-box;
     border-radius: 5px;
+    background-color: #00274C;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
 }
